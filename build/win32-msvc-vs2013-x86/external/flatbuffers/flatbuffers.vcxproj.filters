@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\flatc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_cpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_fbs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_general.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_go.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{215C7BA9-F033-400A-8158-BC5B686A7F7D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
