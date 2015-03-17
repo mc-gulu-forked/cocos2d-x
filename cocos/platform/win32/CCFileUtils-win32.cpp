@@ -60,16 +60,17 @@ static void _checkPath()
 {
     if (0 == s_resourcePath.length())
     {
-        WCHAR *pUtf16ExePath = nullptr;
-        _get_wpgmptr(&pUtf16ExePath);
+        //gulu: 这里把下面这个改动给去掉了，仍使用老版本的行为，默认资源路径仍使用老版本中的 Working Directory (而非 exe 路径)
+        // https://github.com/cocos2d/cocos2d-x/commit/653bf1549d930ef4026a07716c6d4bbd7430e258
 
-        // We need only directory part without exe
-        WCHAR *pUtf16DirEnd = wcsrchr(pUtf16ExePath, L'\\');
+        WCHAR utf16Path[CC_MAX_PATH] = { 0 };
+        GetCurrentDirectoryW(sizeof(utf16Path) - 1, utf16Path);
 
-        char utf8ExeDir[CC_MAX_PATH] = { 0 };
-        int nNum = WideCharToMultiByte(CP_UTF8, 0, pUtf16ExePath, pUtf16DirEnd-pUtf16ExePath+1, utf8ExeDir, sizeof(utf8ExeDir), nullptr, nullptr);
+        char utf8Path[CC_MAX_PATH] = { 0 };
+        int nNum = WideCharToMultiByte(CP_UTF8, 0, utf16Path, -1, utf8Path, sizeof(utf8Path), nullptr, nullptr);
 
-        s_resourcePath = convertPathFormatToUnixStyle(utf8ExeDir);
+        s_resourcePath = convertPathFormatToUnixStyle(utf8Path);
+        s_resourcePath.append("/");
     }
 }
 
