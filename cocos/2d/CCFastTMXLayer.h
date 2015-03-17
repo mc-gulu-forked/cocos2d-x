@@ -177,6 +177,9 @@ public:
     virtual void draw(Renderer *renderer, const Mat4& transform, uint32_t flags) override;
     void removeChild(Node* child, bool cleanup = true) override;
 
+    //gulu: moved from protected
+    Mat4 tileToNodeTransform();
+
 protected:
 
     bool initWithTilesetInfo(TMXTilesetInfo *tilesetInfo, TMXLayerInfo *layerInfo, TMXMapInfo *mapInfo);
@@ -186,7 +189,6 @@ protected:
     /* The layer recognizes some special properties, like cc_vertez */
     void parseInternalProperties();
     
-    Mat4 tileToNodeTransform();
     Rect tileBoundsForClipTransform(const Mat4 &tileToClip);
     
     int getVertexZForPos(const Vec2& pos);
