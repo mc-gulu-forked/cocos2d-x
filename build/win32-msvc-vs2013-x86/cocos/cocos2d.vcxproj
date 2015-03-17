@@ -26,25 +26,25 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
@@ -58,22 +58,30 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\cocos\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cocos2d.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cocos2d</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\Release\</OutDir>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\cocos\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cocos2d.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cocos2d</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\MinSizeRel\</OutDir>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\cocos\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cocos2d.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cocos2d</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\RelWithDebInfo\</OutDir>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\cocos\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cocos2d.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cocos2d</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -91,11 +99,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="Debug";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"Debug\";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF,;D:\repositories\bubbletown\external\cocos2d-x\cocos\.;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform\desktop;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\edtaa3func;D:\repositories\bubbletown\external\cocos2d-x\cocos\audio\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\editor-support;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\..\extensions;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\xxtea;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OggDecoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\MP3Decoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OpenalSoft\include\AL;D:\repositories\bubbletown\external\cocos2d-x\external\unzip;D:\repositories\bubbletown\external\cocos2d-x\external\jpeg\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\png\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tiff\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tinyxml2;D:\repositories\bubbletown\external\cocos2d-x\external\freetype2\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\websockets\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\curl\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\xxhash;D:\repositories\bubbletown\external\cocos2d-x\external\webp\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\chipmunk\include\chipmunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -106,6 +114,20 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;opengl32.lib;..\..\..\external\win32-specific\gles\prebuilt\glew32.lib;..\..\..\external\glfw3\prebuilt\win32\glfw3.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\..\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\..\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\lib\Debug\unzip.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\..\..\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\..\external\png\prebuilt\win32\libpng.lib;..\..\..\external\tiff\prebuilt\win32\libtiff.lib;..\lib\Debug\tinyxml2.lib;..\..\..\external\freetype2\prebuilt\win32\freetype250.lib;..\..\..\external\websockets\prebuilt\win32\websockets.lib;..\..\..\external\curl\prebuilt\win32\libcurl_imp.lib;..\lib\Debug\xxhash.lib;ws2_32.lib;winmm.lib;..\..\..\external\webp\prebuilt\win32\libwebp.lib;..\..\..\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/lib/Debug/cocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/cocos/Debug/cocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -121,12 +143,12 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="Release";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"Release\";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF,;D:\repositories\bubbletown\external\cocos2d-x\cocos\.;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform\desktop;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\edtaa3func;D:\repositories\bubbletown\external\cocos2d-x\cocos\audio\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\editor-support;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\..\extensions;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\xxtea;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OggDecoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\MP3Decoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OpenalSoft\include\AL;D:\repositories\bubbletown\external\cocos2d-x\external\unzip;D:\repositories\bubbletown\external\cocos2d-x\external\jpeg\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\png\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tiff\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tinyxml2;D:\repositories\bubbletown\external\cocos2d-x\external\freetype2\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\websockets\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\curl\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\xxhash;D:\repositories\bubbletown\external\cocos2d-x\external\webp\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\chipmunk\include\chipmunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -137,6 +159,20 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;opengl32.lib;..\..\..\external\win32-specific\gles\prebuilt\glew32.lib;..\..\..\external\glfw3\prebuilt\win32\glfw3.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\..\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\..\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\lib\Release\unzip.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\..\..\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\..\external\png\prebuilt\win32\libpng.lib;..\..\..\external\tiff\prebuilt\win32\libtiff.lib;..\lib\Release\tinyxml2.lib;..\..\..\external\freetype2\prebuilt\win32\freetype250.lib;..\..\..\external\websockets\prebuilt\win32\websockets.lib;..\..\..\external\curl\prebuilt\win32\libcurl_imp.lib;..\lib\Release\xxhash.lib;ws2_32.lib;winmm.lib;..\..\..\external\webp\prebuilt\win32\libwebp.lib;..\..\..\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/lib/Release/cocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/cocos/Release/cocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
@@ -152,12 +188,12 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="MinSizeRel";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"MinSizeRel\";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF,;D:\repositories\bubbletown\external\cocos2d-x\cocos\.;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform\desktop;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\edtaa3func;D:\repositories\bubbletown\external\cocos2d-x\cocos\audio\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\editor-support;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\..\extensions;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\xxtea;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OggDecoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\MP3Decoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OpenalSoft\include\AL;D:\repositories\bubbletown\external\cocos2d-x\external\unzip;D:\repositories\bubbletown\external\cocos2d-x\external\jpeg\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\png\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tiff\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tinyxml2;D:\repositories\bubbletown\external\cocos2d-x\external\freetype2\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\websockets\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\curl\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\xxhash;D:\repositories\bubbletown\external\cocos2d-x\external\webp\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\chipmunk\include\chipmunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -168,6 +204,20 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;opengl32.lib;..\..\..\external\win32-specific\gles\prebuilt\glew32.lib;..\..\..\external\glfw3\prebuilt\win32\glfw3.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\..\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\..\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\lib\MinSizeRel\unzip.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\..\..\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\..\external\png\prebuilt\win32\libpng.lib;..\..\..\external\tiff\prebuilt\win32\libtiff.lib;..\lib\MinSizeRel\tinyxml2.lib;..\..\..\external\freetype2\prebuilt\win32\freetype250.lib;..\..\..\external\websockets\prebuilt\win32\websockets.lib;..\..\..\external\curl\prebuilt\win32\libcurl_imp.lib;..\lib\MinSizeRel\xxhash.lib;ws2_32.lib;winmm.lib;..\..\..\external\webp\prebuilt\win32\libwebp.lib;..\..\..\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/lib/MinSizeRel/cocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/cocos/MinSizeRel/cocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
@@ -184,11 +234,11 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR="RelWithDebInfo";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;UNICODE;_UNICODE;_USE3DDLL;OPENAL_PLAIN_INCLUDES;CC_USE_WEBP=1;CMAKE_INTDIR=\"RelWithDebInfo\";cocos2d_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF,;D:\repositories\bubbletown\external\cocos2d-x\cocos\.;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform\desktop;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\ConvertUTF;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\edtaa3func;D:\repositories\bubbletown\external\cocos2d-x\cocos\audio\include;D:\repositories\bubbletown\external\cocos2d-x\cocos\editor-support;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\..\extensions;D:\repositories\bubbletown\external\cocos2d-x\cocos\..\external\xxtea;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OggDecoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\MP3Decoder\include;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\OpenalSoft\include\AL;D:\repositories\bubbletown\external\cocos2d-x\external\unzip;D:\repositories\bubbletown\external\cocos2d-x\external\jpeg\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\png\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tiff\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\tinyxml2;D:\repositories\bubbletown\external\cocos2d-x\external\freetype2\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\websockets\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\curl\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\xxhash;D:\repositories\bubbletown\external\cocos2d-x\external\webp\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\chipmunk\include\chipmunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -199,6 +249,20 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;opengl32.lib;..\..\..\external\win32-specific\gles\prebuilt\glew32.lib;..\..\..\external\glfw3\prebuilt\win32\glfw3.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\..\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\..\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\..\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\lib\RelWithDebInfo\unzip.lib;..\..\..\external\win32-specific\zlib\prebuilt\libzlib.lib;..\..\..\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\..\external\png\prebuilt\win32\libpng.lib;..\..\..\external\tiff\prebuilt\win32\libtiff.lib;..\lib\RelWithDebInfo\tinyxml2.lib;..\..\..\external\freetype2\prebuilt\win32\freetype250.lib;..\..\..\external\websockets\prebuilt\win32\websockets.lib;..\..\..\external\curl\prebuilt\win32\libcurl_imp.lib;..\lib\RelWithDebInfo\xxhash.lib;ws2_32.lib;winmm.lib;..\..\..\external\webp\prebuilt\win32\libwebp.lib;..\..\..\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/lib/RelWithDebInfo/cocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/cocos/RelWithDebInfo/cocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="D:\repositories\bubbletown\external\cocos2d-x\cocos\CMakeLists.txt">

@@ -90,11 +90,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -119,12 +119,12 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -149,12 +149,12 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -180,11 +180,11 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRDLL;_EXPORT_DLL_;_USEGUIDLL;_USREXDLL;_USRSTUDIODLL;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
