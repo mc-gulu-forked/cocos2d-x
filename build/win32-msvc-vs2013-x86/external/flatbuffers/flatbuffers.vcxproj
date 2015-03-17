@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{0EF6F9E3-EB7E-479E-BF7D-0F5DD8BDE23E}</ProjectGUID>
+    <ProjectGUID>{60B6E943-E941-4F68-8A74-ACB4FB8586F3}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>flatbuffers</ProjectName>
@@ -58,19 +58,19 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\lib\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">flatbuffers.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">flatbuffers</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\lib\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">flatbuffers.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">flatbuffers</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\lib\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">flatbuffers.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">flatbuffers</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\lib\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\lib\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">flatbuffers.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">flatbuffers</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
@@ -78,7 +78,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> -fexceptions %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -96,10 +96,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,7 +110,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions> -fexceptions %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4251;4244;4334;4005;4820;4710;4514;4056;4996;4099</DisableSpecificWarnings>
@@ -127,10 +127,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -141,7 +141,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
       <AdditionalOptions> -fexceptions %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4251;4244;4334;4005;4820;4710;4514;4056;4996;4099</DisableSpecificWarnings>
@@ -158,10 +158,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -172,7 +172,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
       <AdditionalOptions> -fexceptions %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -189,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;COCOS2DXWIN32_EXPORTS;_WINDOWS;WIN32;_WIN32;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_BOX2D_INTEGRATION=0;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\repositories\cocos2d-x\cocos;D:\repositories\cocos2d-x;D:\repositories\cocos2d-x\deprecated;D:\repositories\cocos2d-x\cocos\platform;D:\repositories\cocos2d-x\extensions;D:\repositories\cocos2d-x\external;D:\repositories\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\cocos2d-x\external\glfw3\include\win32;D:\repositories\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\repositories\bubbletown\external\cocos2d-x\cocos;D:\repositories\bubbletown\external\cocos2d-x;D:\repositories\bubbletown\external\cocos2d-x\deprecated;D:\repositories\bubbletown\external\cocos2d-x\cocos\platform;D:\repositories\bubbletown\external\cocos2d-x\extensions;D:\repositories\bubbletown\external\cocos2d-x\external;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\gles\include\OGLES;D:\repositories\bubbletown\external\cocos2d-x\external\glfw3\include\win32;D:\repositories\bubbletown\external\cocos2d-x\external\win32-specific\zlib\include;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -201,10 +201,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/cocos2d-x -BD:/repositories/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/bubbletown/external/cocos2d-x -BD:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -212,12 +212,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/cocos2d-x -BD:/repositories/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/bubbletown/external/cocos2d-x -BD:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -225,12 +225,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/cocos2d-x -BD:/repositories/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/bubbletown/external/cocos2d-x -BD:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -238,12 +238,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/cocos2d-x -BD:/repositories/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/repositories/bubbletown/external/cocos2d-x -BD:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86 --check-stamp-file D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -251,23 +251,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/repositories/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/repositories/bubbletown/external/cocos2d-x/external/flatbuffers/CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\external\flatbuffers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\flatc.cpp"  />
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_cpp.cpp"  />
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_fbs.cpp"  />
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_general.cpp"  />
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_go.cpp"  />
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_gen_text.cpp"  />
-    <ClCompile Include="D:\repositories\cocos2d-x\external\flatbuffers\idl_parser.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\flatc.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\idl_gen_cpp.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\idl_gen_fbs.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\idl_gen_general.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\idl_gen_go.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\idl_gen_text.cpp"  />
+    <ClCompile Include="D:\repositories\bubbletown\external\cocos2d-x\external\flatbuffers\idl_parser.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:/repositories/cocos2d-x/build/win32-msvc-vs2013-x86/ZERO_CHECK.vcxproj">
-      <Project>98B5B861-0FE9-40CB-9072-48ADD1493BC5</Project>
+    <ProjectReference Include="D:/repositories/bubbletown/external/cocos2d-x/build/win32-msvc-vs2013-x86/ZERO_CHECK.vcxproj">
+      <Project>AB70788F-8CBE-4F4D-BC68-FD806FA38901</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

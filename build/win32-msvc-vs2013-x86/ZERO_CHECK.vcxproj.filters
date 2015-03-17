@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\repositories\cocos2d-x\build\win32-msvc-vs2013-x86\CMakeFiles\2058bebc43652fc465a0e8a8548f2b52\generate.stamp.rule">
+    <CustomBuild Include="D:\repositories\bubbletown\external\cocos2d-x\build\win32-msvc-vs2013-x86\CMakeFiles\247b569e01b33b19fd984579dd08e715\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CCE09EA2-CA66-4339-AA94-4DF99E670733}</UniqueIdentifier>
+      <UniqueIdentifier>{03A28F80-5572-4E5A-B763-E8889BF08F65}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
