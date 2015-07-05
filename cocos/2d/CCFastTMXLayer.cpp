@@ -165,7 +165,9 @@ void TMXLayer::draw(Renderer *renderer, const Mat4& transform, uint32_t flags)
         if(iter.second->getCount() > 0)
         {
             auto& cmd = _renderCommands[index++];
-            cmd.init(iter.first, _texture->getName(), getGLProgramState(), BlendFunc::ALPHA_NON_PREMULTIPLIED, iter.second, _modelViewTransform, flags);
+
+            //gulu: 这里的混合方式做了修改来消除 tile 的黑边现象
+            cmd.init(iter.first, _texture->getName(), getGLProgramState(), BlendFunc::ALPHA_PREMULTIPLIED, iter.second, _modelViewTransform, flags);
             renderer->addCommand(&cmd);
         }
     }
@@ -316,7 +318,7 @@ void TMXLayer::setupTiles()
     // By default all the tiles are aliased
     // pros: easier to render
     // cons: difficult to scale / rotate / etc.
-    _texture->setAliasTexParameters();
+    _texture->setAntiAliasTexParameters();
 
     //CFByteOrder o = CFByteOrderGetCurrent();
 
