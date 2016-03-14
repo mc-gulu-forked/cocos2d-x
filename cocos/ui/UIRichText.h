@@ -44,6 +44,10 @@ public:
     RichElement(){};
     virtual ~RichElement(){};
     bool init(int tag, const Color3B& color, GLubyte opacity);
+
+    //gulu: [2016-03-14] 可在创建后设置 Opacity (这样可以 FadeIn/FadeOut)
+    void setOpacity(GLubyte opacity);
+
 protected:
     Type _type;
     int _tag;
@@ -110,7 +114,10 @@ public:
     void formatText();
     virtual void ignoreContentAdaptWithSize(bool ignore);
     virtual std::string getDescription() const override;
-    
+
+    //gulu: [2016-03-14] 使得对 RichText 设置的 Opacity 对其子节点生效 (这样可以 FadeIn/FadeOut)
+    virtual void setOpacity(GLubyte opacity);
+
 CC_CONSTRUCTOR_ACCESS:
     virtual bool init() override;
     

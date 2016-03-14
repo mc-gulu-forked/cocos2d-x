@@ -41,7 +41,12 @@ bool RichElement::init(int tag, const Color3B &color, GLubyte opacity)
     _opacity = opacity;
     return true;
 }
-    
+
+void RichElement::setOpacity(GLubyte opacity)
+{
+    _opacity = opacity;
+}
+
     
 RichElementText* RichElementText::create(int tag, const Color3B &color, GLubyte opacity, const std::string& text, const std::string& fontName, float fontSize)
 {
@@ -468,6 +473,17 @@ void RichText::ignoreContentAdaptWithSize(bool ignore)
 std::string RichText::getDescription() const
 {
     return "RichText";
+}
+
+void RichText::setOpacity(GLubyte opacity)
+{
+    Widget::setOpacity(opacity);
+    for (ssize_t i = 0; i < _richElements.size(); i++)
+    {
+        RichElement* element = static_cast<RichElement*>(_richElements.at(i));
+        element->setOpacity(opacity);
+    }
+    _formatTextDirty = true;
 }
 
 }
