@@ -92,6 +92,10 @@ public:
     virtual ~RichElementCustomNode(){CC_SAFE_RELEASE(_customNode);};
     bool init(int tag, const Color3B& color, GLubyte opacity, Node* customNode);
     static RichElementCustomNode* create(int tag, const Color3B& color, GLubyte opacity, Node* customNode);
+
+    //gulu: [2016-03-23] 增加节点获取函数
+    Node* getCustomNode() const { return _customNode; }
+
 protected:
     Node* _customNode;
     friend class RichText;
