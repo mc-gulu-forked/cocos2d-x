@@ -31,10 +31,10 @@ THE SOFTWARE.
 #include <android/log.h>
 #include <jni.h>
 #include "base/ccTypes.h"
-#include "jni/DPIJni.h"
-#include "jni/Java_org_cocos2dx_lib_Cocos2dxHelper.h"
-#include "jni/JniHelper.h"
+#include "platform/android/jni/JniHelper.h"
 #include "platform/CCFileUtils.h"
+
+static const std::string helperClassName = "org/cocos2dx/lib/Cocos2dxHelper";
 
 NS_CC_BEGIN
 
@@ -43,7 +43,7 @@ int Device::getDPI()
     static int dpi = -1;
     if (dpi == -1)
     {
-        dpi = (int)getDPIJNI();
+        dpi = JniHelper::callStaticIntMethod(helperClassName, "getDPI");
     }
     return dpi;
 }
@@ -52,17 +52,17 @@ void Device::setAccelerometerEnabled(bool isEnabled)
 {
     if (isEnabled)
     {
-        enableAccelerometerJni();
+        JniHelper::callStaticVoidMethod(helperClassName, "enableAccelerometer");
     }
     else
     {
-        disableAccelerometerJni();
+        JniHelper::callStaticVoidMethod(helperClassName, "disableAccelerometer");
     }
 }
 
 void Device::setAccelerometerInterval(float interval)
 {
-	setAccelerometerIntervalJni(interval);
+    JniHelper::callStaticVoidMethod(helperClassName, "setAccelerometerInterval", interval);
 }
 
 class BitmapDC
@@ -80,15 +80,15 @@ public:
     {
     }
 
-    bool getBitmapFromJavaShadowStroke(	const char *text,
-    									int nWidth,
-    									int nHeight,
-    									Device::TextAlign eAlignMask,
+    bool getBitmapFromJavaShadowStroke( const char *text,
+                                        int nWidth,
+                                        int nHeight,
+                                        Device::TextAlign eAlignMask,
                       const FontDefinition& textDefinition )
     {
            JniMethodInfo methodInfo;
            if (! JniHelper::getStaticMethodInfo(methodInfo, "org/cocos2dx/lib/Cocos2dxBitmap", "createTextBitmapShadowStroke",
-               "(Ljava/lang/String;Ljava/lang/String;IIIIIIIIZFFFFZIIIIF)Z"))
+               "([BLjava/lang/String;IIIIIIIIZFFFFZIIIIF)Z"))
            {
                CCLOG("%s %d: error to get methodInfo", __FILE__, __LINE__);
                return false;
@@ -102,7 +102,7 @@ public:
            // requires this portion of the path to be omitted for assets inside the app package.
            if (fullPathOrFontName.find("assets/") == 0)
            {
-               fullPathOrFontName = fullPathOrFontName.substr(strlen("assets/"));	// Chop out the 'assets/' portion of the path.
+               fullPathOrFontName = fullPathOrFontName.substr(strlen("assets/"));   // Chop out the 'assets/' portion of the path.
            }
 
            /**create bitmap
@@ -111,10 +111,12 @@ public:
             * and data.
             * use this approach to decrease the jni call number
            */
-           jstring jstrText = methodInfo.env->NewStringUTF(text);
+           int count = strlen(text);
+           jbyteArray strArray = methodInfo.env->NewByteArray(count);
+           methodInfo.env->SetByteArrayRegion(strArray, 0, count, reinterpret_cast<const jbyte*>(text));
            jstring jstrFont = methodInfo.env->NewStringUTF(fullPathOrFontName.c_str());
 
-           if(!methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID, jstrText,
+           if(!methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID, strArray,
                jstrFont, textDefinition._fontSize, textDefinition._fontFillColor.r, textDefinition._fontFillColor.g, 
                textDefinition._fontFillColor.b, textDefinition._fontAlpha,
                eAlignMask, nWidth, nHeight, 
@@ -126,7 +128,7 @@ public:
                 return false;
            }
 
-           methodInfo.env->DeleteLocalRef(jstrText);
+           methodInfo.env->DeleteLocalRef(strArray);
            methodInfo.env->DeleteLocalRef(jstrFont);
            methodInfo.env->DeleteLocalRef(methodInfo.classID);
 
@@ -166,10 +168,14 @@ Data Device::getTextureDataForText(const char * text, const FontDefinition& text
     return ret;
 }
 
-
 void Device::setKeepScreenOn(bool value)
 {
-    setKeepScreenOnJni(value);
+    JniHelper::callStaticVoidMethod(helperClassName, "setKeepScreenOn", value);
+}
+
+void Device::vibrate(float duration)
+{
+    JniHelper::callStaticVoidMethod(helperClassName, "vibrate", duration);
 }
 
 NS_CC_END

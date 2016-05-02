@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 #include "extensions/cocos-ext.h"
-#include "cocostudio/CocoStudio.h"
+#include "editor-support/cocostudio/CocoStudio.h"
 
 
 class EnemyController : public cocostudio::ComController
@@ -14,8 +14,8 @@ protected:
         
 public:
     virtual bool init() override;
-    virtual void onEnter() override;
-    virtual void onExit() override;
+    virtual void onAdd() override;
+    virtual void onRemove() override;
     virtual void update(float delta) override;
    
     static EnemyController* create(void);

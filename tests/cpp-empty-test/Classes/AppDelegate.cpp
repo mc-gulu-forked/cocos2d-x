@@ -6,6 +6,9 @@
 #include "HelloWorldScene.h"
 #include "AppMacros.h"
 
+//Uncomment the following line to use localize manager
+//#include "editor-support/cocostudio/LocalizationManager.h"
+
 USING_NS_CC;
 using namespace std;
 
@@ -36,12 +39,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setOpenGLView(glview);
 
     // Set the design resolution
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
-    // a bug in DirectX 11 level9-x on the device prevents ResolutionPolicy::NO_BORDER from working correctly
-    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::SHOW_ALL);
-#else
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
-#endif
 
 	Size frameSize = glview->getFrameSize();
     
@@ -76,12 +74,28 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     // set searching path
     FileUtils::getInstance()->setSearchPaths(searchPath);
-	
+
+    // Uncomment follow block to use localize manager to set localize strings
+
+    //  If you want to load json localize data, use follow block
+    /*
+    cocostudio::ILocalizationManager * lm = cocostudio::JsonLocalizationManager::getInstance();
+    lm->initLanguageData("your localize file name.lang.json");
+    cocostudio::LocalizationHelper::setCurrentManager(lm, false);
+    */
+
+    //  If you want to load binary localize data, use follow block
+    /*
+    cocostudio::ILocalizationManager * lm = cocostudio::BinLocalizationManager::getInstance();
+    lm->initLanguageData("your localize file name.lang.csb");
+    cocostudio::LocalizationHelper::setCurrentManager(lm, true);
+    */
+
     // turn on display FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 60);
+    director->setAnimationInterval(1.0f / 60);
 
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::scene();
