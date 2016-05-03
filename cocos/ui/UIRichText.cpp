@@ -1866,6 +1866,4 @@ void RichText::setOpacity(GLubyte opacity)
     _formatTextDirty = true;
 }
 
-}
-
-NS_CC_END
+//NS_CC_END
