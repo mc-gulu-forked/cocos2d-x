@@ -816,7 +816,8 @@ void Widget::onTouchMoved(Touch *touch, Event *unusedEvent)
 {
     _touchMovePosition = touch->getLocation();
 
-    setHighlighted(hitTest(_touchMovePosition, _hittedByCamera, nullptr));
+    //gulu: [2016-05-18] 更新到新版本后会在这里 crash， 切换场景时 _hittedByCamera 可能是无效指针
+    //setHighlighted(hitTest(_touchMovePosition, _hittedByCamera, nullptr));
 
     /*
      * Propagate touch events to its parents
