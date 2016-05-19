@@ -71,7 +71,8 @@ void QuadCommand::reIndex(int indicesCount)
     {
         CCLOG("cocos2d: QuadCommand: resizing index size from [%d] to [%d]", __indexCapacity, indicesCount);
         //gulu: [2016-05-19] 这里总是使用安全的 malloc 而不是 realloc (目前已知 realloc 在 iOS 上会 crash)
-        free(__indices);
+        if (__indices)
+            free(__indices);
         __indices = (GLushort*) malloc(indicesCount * sizeof(__indices[0]));
         __indexCapacity = indicesCount;
     }
