@@ -798,13 +798,19 @@ std::string FileUtils::fullPathForFilename(const std::string &filename) const
         }
     }
 
-    if(isPopupNotify()){
-        CCLOG("cocos2d: fullPathForFilename: No file found at %s. Possible missing file.", filename.c_str());
-    }
+    //gulu: [2016-08-15] 改变找不到文件时的处理方式
+    //if(isPopupNotify()){
+    //    CCLOG("cocos2d: fullPathForFilename: No file found at %s. Possible missing file.", filename.c_str());
+    //}
+    if (!s_muteOnMissing)
+        s_missingFiles[filename] = utils::gettime();
 
     // The file wasn't found, return empty string.
     return "";
 }
+
+std::map<std::string, double> FileUtils::s_missingFiles;
+bool FileUtils::s_muteOnMissing = false;
 
 std::string FileUtils::fullPathFromRelativeFile(const std::string &filename, const std::string &relativeFile)
 {

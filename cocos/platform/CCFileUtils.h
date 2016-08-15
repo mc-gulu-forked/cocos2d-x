@@ -728,6 +728,10 @@ protected:
      */
     static FileUtils* s_sharedFileUtils;
 
+    //gulu: [2016-08-15] 找不到文件时记录到这个表
+public:
+    static std::map<std::string, double> s_missingFiles;
+    static bool s_muteOnMissing;
 };
 
 // end of support group
